@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multistep form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <div class="error_messages"></div>
+    <form action="">
+      <h1>Registration form</h1>
+
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        <div class="step-item" id="one">1</div>
+        <div class="step-item" id="two">2</div>
+        <div class="step-item" id="three">3</div>
+      </div>
+
+      <div class="signup-info form_steps active">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
+        </div>
+        <div class="form-group">
+          <label for="password_confirm">Password confirm</label>
+          <input type="password" name="password_confirm" id="password_confirm">
+        </div>
+        <div class="actions">
+          <button class="next_btn">Next</button>
+        </div>
+      </div>
+
+      <div class="personal-info form_steps">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last name</label>
+          <input type="text" name="last_name" id="last_name">
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="text" name="age" id="age">
+        </div>
+        <div class="actions">
+          <button class="prev_btn">Previous</button>
+          <button class="next_btn">Next</button>
+        </div>
+      </div>
+
+      <div class="address-info form_steps">
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address">
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <input type="text" name="state" id="state">
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" name="city" id="city">
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" name="country" id="country">
+        </div>
+        <div class="actions">
+          <button class="prev_btn">Previous</button>
+          <button class="submit_btn">Submit</button>
+        </div>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
